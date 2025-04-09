@@ -1,0 +1,91 @@
+{
+  "navigation": {
+    "challenge": "Challenge",
+    "hall_of_fame": "Hall of Fame",
+    "about": "About Us",
+    "events": "Events",
+    "materials": "Materials"
+  },
+  "hero": {
+    "title": "Discover the World of Machine Learning",
+    "description": "A student initiative for anyone interested in artificial intelligence and machine learning.",
+    "sparkles": "Sparkles"
+  },
+  "current_challenge": {
+    "title": "Current Challenge"
+  },
+  "challenges": {
+    "stroke_prediction": {
+      "name": "Predict Strokes",
+      "description": "Develop a machine learning model that predicts whether a person is at risk of having a stroke based on patient data. The dataset includes demographic characteristics, health factors, and lifestyle information. The goal is to make accurate predictions and develop effective models for data imbalance.",
+      "deadline": "April 30, 2025",
+      "presentation": "May 5, 2025, 14:00"
+    }
+  },
+  "events": {
+    "title": "Upcoming Events",
+    "introduction_to_neural_networks": {
+      "name": "Introduction to Neural Networks",
+      "date": "April 15, 2025",
+      "time": "14:00 - 16:00",
+      "location": "Room 2.01"
+    }
+  },
+  "hall_of_fame": {
+    "title": "Hall of Fame",
+    "2025_march": {
+      "date": "March 2025",
+      "challenge_title": "Neural Network Architecture Challenge",
+      "winner": "Team Neural Ninjas",
+      "description": "Outstanding performance in developing an innovative CNN architecture with 98.5% accuracy."
+    }
+  },
+  "features": {
+    "title": "Our Focus Areas",
+    "neural_networks": {
+      "title": "Neural Networks",
+      "description": "Learn the fundamentals of neural networks"
+    },
+    "coding_practice": {
+      "title": "Coding Practice",
+      "description": "Practical exercises with Python"
+    },
+    "data_science": {
+      "title": "Data Science",
+      "description": "Data analysis and visualization"
+    },
+    "deep_learning": {
+      "title": "Deep Learning",
+      "description": "Advanced ML concepts"
+    }
+  },
+  "materials": {
+    "title": "Teaching Materials",
+    "material_1": {
+      "title": "Fundamentals of AI",
+      "description": "Introduction to the key concepts of artificial intelligence.",
+      "link": "link-to-ai"
+    },
+    "material_2": {
+      "title": "Python Basics",
+      "description": "Programming fundamentals for machine learning with Python.",
+      "link": "link-to-python"
+    },
+    "material_3": {
+      "title": "Data Science",
+      "description": "Data analysis and visualization for ML projects.",
+      "link": "link-to-datascience"
+    }
+  },
+  "about": {
+    "title": "About Our Initiative",
+    "description_1": "We are a group of students passionate about machine learning and artificial intelligence. Our goal is to share knowledge and learn together.",
+    "description_2": "In regular meetings, we exchange ideas, work on projects, and support each other in learning.",
+    "button_text": "Meet the Team"
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "data_privacy": "Data Privacy",
+    "contact": "Contact"
+  }
+}

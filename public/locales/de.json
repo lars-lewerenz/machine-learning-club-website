@@ -1,0 +1,91 @@
+{
+  "navigation": {
+    "challenge": "Challenge",
+    "hall_of_fame": "Hall of Fame",
+    "about": "Über uns",
+    "events": "Termine",
+    "materials": "Materialien"
+  },
+  "hero": {
+    "title": "Entdecke die Welt des Machine Learning",
+    "description": "Eine studentische Initiative für alle, die sich für künstliche Intelligenz und maschinelles Lernen interessieren.",
+    "sparkles": "Funkeln"
+  },
+  "current_challenge": {
+    "title": "Aktuelle Challenge"
+  },
+  "challenges": {
+    "stroke_prediction": {
+      "name": "Schlaganfälle vorhersagen",
+      "description": "Entwickle ein Machine-Learning-Modell, das basierend auf Patientendaten vorhersagt, ob eine Person ein Schlaganfallrisiko hat. Der Datensatz enthält demografische Merkmale, Gesundheitsfaktoren und Lebensstilinformationen. Ziel ist es, präzise Vorhersagen zu treffen und effektive Modelle für das Ungleichgewicht der Daten zu finden.",
+      "deadline": "30. April 2025",
+      "presentation": "5. Mai 2025, 14:00 Uhr"
+    }
+  },
+  "events": {
+    "title": "Kommende Termine",
+    "introduction_to_neural_networks": {
+      "name": "Einführung in Neural Networks",
+      "date": "15. April 2025",
+      "time": "14:00 - 16:00",
+      "location": "Raum 2.01"
+    }
+  },
+  "hall_of_fame": {
+    "title": "Hall of Fame",
+    "2025_march": {
+      "date": "März 2025",
+      "challenge_title": "Neural Network Architecture Challenge",
+      "winner": "Team Neural Ninjas",
+      "description": "Herausragende Leistung in der Entwicklung einer innovativen CNN-Architektur mit 98.5% Genauigkeit."
+    }
+  },
+  "features": {
+    "title": "Unsere Schwerpunkte",
+    "neural_networks": {
+      "title": "Neural Networks",
+      "description": "Lerne die Grundlagen neuronaler Netze kennen"
+    },
+    "coding_practice": {
+      "title": "Coding Practice",
+      "description": "Praktische Übungen mit Python"
+    },
+    "data_science": {
+      "title": "Data Science",
+      "description": "Datenanalyse und Visualisierung"
+    },
+    "deep_learning": {
+      "title": "Deep Learning",
+      "description": "Fortgeschrittene ML-Konzepte"
+    }
+  },
+  "materials": {
+    "title": "Lehrmaterialien",
+    "material_1": {
+      "title": "Grundlagen der KI",
+      "description": "Einführung in die wichtigsten Konzepte der künstlichen Intelligenz.",
+      "link": "link-zu-KI"
+    },
+    "material_2": {
+      "title": "Python Basics",
+      "description": "Programmiergrundlagen für Machine Learning mit Python.",
+      "link": "link-zu-python"
+    },
+    "material_3": {
+      "title": "Data Science",
+      "description": "Datenanalyse und -visualisierung für ML-Projekte.",
+      "link": "link-zu-datascience"
+    }
+  },
+  "about": {
+    "title": "Über unsere Initiative",
+    "description_1": "Wir sind eine Gruppe von Studierenden, die sich für Machine Learning und künstliche Intelligenz begeistern. Unser Ziel ist es, Wissen zu teilen und gemeinsam zu lernen.",
+    "description_2": "In regelmäßigen Treffen tauschen wir uns aus, arbeiten an Projekten und unterstützen uns gegenseitig beim Lernen.",
+    "button_text": "Team kennenlernen"
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "data_privacy": "Datenschutz",
+    "contact": "Kontakt"
+  }
+}
