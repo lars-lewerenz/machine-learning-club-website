@@ -30,7 +30,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher.jsx";
 import SectionHeader from "@/components/SectionHeader.jsx";
 import WorkInProgress from "@/WorkInProgress.jsx";
 
-const SITE_UNDER_CONSTRUCTION = true; // Set to `false` when the site is ready
+const SITE_UNDER_CONSTRUCTION = false; // Set to `false` when the site is ready
 
 function App() {
   if (SITE_UNDER_CONSTRUCTION) {
