@@ -9,8 +9,9 @@ import {
   Cpu,
   Users,
   Trophy,
-  Medal,
   Calendar as CalendarIcon,
+  Send,
+  Mail,
   BookOpen,
   Sparkles,
   GraduationCap,
@@ -100,6 +101,52 @@ function App() {
     } else {
       document.documentElement.classList.remove('dark');
     }
+  };
+
+  const handleNewsletterSubmit = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;  // Get email from form
+    console.log("Newsletter Registration Email:", email);
+
+    // Send email to a backend or third-party service
+    // Example: send the email to a backend API
+    fetch('/api/subscribe-newsletter', {
+      method: 'POST',
+      body: JSON.stringify({ email }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).then(response => {
+      if (response.ok) {
+        alert('Successfully subscribed to the newsletter!');
+      } else {
+        alert('Something went wrong, please try again.');
+      }
+    });
+  };
+
+  const handleContactSubmit = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+    console.log("Contact Form Data:", { name, email, message });
+
+    // Send data to backend or third-party service
+    // Example: send the contact message to a backend API
+    fetch('/api/contact-us', {
+      method: 'POST',
+      body: JSON.stringify({ name, email, message }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).then(response => {
+      if (response.ok) {
+        alert('Your message has been sent!');
+      } else {
+        alert('Something went wrong, please try again.');
+      }
+    });
   };
 
   const backgroundX = useTransform(scrollYProgress, [0, 1], [0, 100])
@@ -225,7 +272,7 @@ function App() {
         {/* Hall of Fame Section */}
         <section id="hall-of-fame" className="py-16">
           <div className="container mx-auto px-4">
-            <SectionHeader icon={Medal} title={t('hall_of_fame.title')}/>
+            <SectionHeader icon={Trophy} title={t('hall_of_fame.title')}/>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <HallOfFameCard
                   title={t('hall_of_fame.2025_march.challenge_title')}
@@ -329,6 +376,80 @@ function App() {
           </div>
         </section>
 
+        {/* Contact & Newsletter Section */}
+        <section className="bg-muted/50 py-16">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <Send className="w-6 h-6 text-primary"/>
+                  <h2
+                      className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600"
+                  >
+                    {t("contact.title")}
+                  </h2>
+                </div>
+                <form className="space-y-4" onSubmit={handleContactSubmit}>
+                  <div>
+                    <input
+                        name="name"
+                        type="text"
+                        placeholder={t("contact.name")}
+                        className="w-full p-2 rounded bg-card border"
+                        required
+                    />
+                  </div>
+                  <div>
+                  <input
+                      name="email"
+                        type="email"
+                        placeholder={t("contact.email")}
+                        className="w-full p-2 rounded bg-card border"
+                        required
+                    />
+                  </div>
+                  <div>
+                  <textarea
+                      name="message"
+                      placeholder={t("contact.message")}
+                      className="w-full p-2 rounded bg-card border h-32"
+                      required
+                  ></textarea>
+                  </div>
+                  <Button className="flex items-center gap-2" type="submit">
+                    <Send className="w-4 h-4" />
+                    {t("contact.send")}
+                  </Button>
+                </form>
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-6">
+                  <Mail className="w-6 h-6 text-primary"/>
+                  <h2
+                      className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600"
+                  >
+                    {t("newsletter.title")}
+                  </h2>
+                </div>
+                <p className="mb-4 text-muted-foreground">
+                  {t("newsletter.description")}
+                </p>
+                <form onSubmit={handleNewsletterSubmit} className="space-y-4">
+                <input
+                    name="email"
+                      type="email"
+                      placeholder={t("newsletter.email")}
+                      className="w-full p-2 rounded bg-card border"
+                  />
+                  <Button type="submit" className="flex items-center gap-2">
+                    <Mail className="w-4 h-4" />
+                    {t("newsletter.subscribe")}
+                  </Button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Footer */}
         <footer className={`bg-background border-t py-12 ${darkMode ? 'bg-dark' : ''}`}>

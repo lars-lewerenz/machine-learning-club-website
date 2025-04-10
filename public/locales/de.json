@@ -83,6 +83,19 @@
     "description_2": "In regelmäßigen Treffen tauschen wir uns aus, arbeiten an Projekten und unterstützen uns gegenseitig beim Lernen.",
     "button_text": "Team kennenlernen"
   },
+  "contact": {
+    "title": "Kontaktiere uns",
+    "name": "Dein Name",
+    "email": "Deine E-Mail-Adresse",
+    "message": "Deine Nachricht",
+    "send": "Nachricht senden"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Bleibe auf dem Laufenden über neue Events und Challenges",
+    "email": "Deine E-Mail-Adresse",
+    "subscribe": "Anmelden"
+  },
   "footer": {
     "imprint": "Impressum",
     "data_privacy": "Datenschutz",

@@ -83,6 +83,19 @@
     "description_2": "In regular meetings, we exchange ideas, work on projects, and support each other in learning.",
     "button_text": "Meet the Team"
   },
+  "contact": {
+    "title": "Contact us",
+    "name": "Your name",
+    "email": "Your email address",
+    "message": "Your message",
+    "send": "Send message"
+  },
+  "newsletter": {
+    "title": "Newsletter",
+    "description": "Stay updated about new events and challenges",
+    "email": "Your email address",
+    "subscribe": "Subscribe"
+  },
   "footer": {
     "imprint": "Imprint",
     "data_privacy": "Data Privacy",
