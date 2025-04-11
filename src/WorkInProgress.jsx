@@ -63,12 +63,12 @@ END:VCALENDAR`;
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white text-center p-6 md:p-12">
+        <div className="flex flex-col min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white text-center p-6 md:p-12">
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="w-full max-w-xl px-8 py-10 bg-gray-900 bg-opacity-60 backdrop-blur-lg rounded-2xl shadow-2xl border border-gray-700"
+                className="w-full max-w-xl mx-auto px-8 py-10 bg-gray-900 bg-opacity-60 backdrop-blur-lg rounded-2xl shadow-2xl border border-gray-700"
             >
                 <div className="flex justify-center items-center mb-6 gap-6">
                     <Database className="h-12 w-12 text-blue-400" />
@@ -123,7 +123,7 @@ END:VCALENDAR`;
             </motion.div>
 
             {/* Footer Links */}
-            <div className="absolute bottom-4 left-0 right-0 text-center text-sm text-gray-400">
+            <div className="mt-auto text-center text-sm text-gray-400 py-4">
                 <p>
                     {t('work_in_progress.questions')} <a href="mailto:contact@machine-learning.club" className="text-blue-400 hover:text-blue-300">{t('work_in_progress.email_us')}</a>
                 </p>
