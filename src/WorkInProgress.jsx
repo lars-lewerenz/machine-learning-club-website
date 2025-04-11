@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Loader2, Database, LineChart, BrainCircuit } from "lucide-react";
+import { Loader2, Database, LineChart, BrainCircuit, CalendarCheck } from "lucide-react";
 import { supabase } from './lib/supabase.js';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import {useTranslation} from "react-i18next";
@@ -89,7 +89,7 @@ END:VCALENDAR`;
                     <p className="text-lg font-medium mb-4">📍 <span className="font-bold">{t('work_in_progress.first_meeting.location.name')}:</span> {t('work_in_progress.first_meeting.location.value')}</p>
                     <button
                         onClick={generateICS}
-                        className="px-6 py-3 text-lg font-semibold rounded-lg bg-white text-gray-800 hover:bg-gray-200 transition-all"
+                        className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-all"
                     >
                         {t('work_in_progress.first_meeting.export_to_calendar')}
                     </button>
@@ -108,7 +108,7 @@ END:VCALENDAR`;
                     />
                     <button
                         type="submit"
-                        className="mt-4 px-6 py-3 text-lg font-semibold rounded-lg transition-all bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="mt-4 px-6 py-2 text-lg font-semibold rounded-lg transition-all bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 disabled:opacity-50 disabled:cursor-not-allowed"
                         disabled={loading}
                     >
                         {loading ? <Loader2 className="animate-spin h-6 w-6 mx-auto" /> : t('work_in_progress.notify_me')}
