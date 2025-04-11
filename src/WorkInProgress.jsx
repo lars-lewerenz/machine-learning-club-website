@@ -58,7 +58,7 @@ export default function WorkInProgress() {
 
                 {/* Adjust size of Lottie animation */}
                 <DotLottieReact
-                    src="src/animations/flying_robot.lottie"
+                    src="animations/flying_robot.lottie"
                     loop
                     autoplay
                     className="flex justify-center items-center"
