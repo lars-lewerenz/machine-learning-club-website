@@ -100,5 +100,63 @@
     "imprint": "Imprint",
     "data_privacy": "Data Privacy",
     "contact": "Contact"
+  },
+  "work_in_progress": {
+    "description": "Our new ML club is launching soon. Get notified as soon as it starts!",
+    "notify_me": "Notify me",
+    "enter_email": "Enter your email",
+    "questions": "Questions?",
+    "email_us": "Email us",
+    "imprint": "Imprint",
+    "privacy": "Privacy"
+  },
+  "imprint": {
+    "title": "Imprint",
+    "responsible": {
+      "title": "Responsible for Content"
+    },
+    "university": {
+      "name": "c/o AStA Universität Bonn",
+      "street": "Endenicher Allee 19 (Container)",
+      "city": "53115 Bonn",
+      "country": "Germany"
+    },
+    "representative": {
+      "title": "Represented by",
+      "name": "Lars Lewerenz, Marius von Kleist",
+      "position": "Lead Coordinator",
+      "address": "Address see above"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "legal": {
+      "title": "Legal Notice",
+      "desc": "This website is maintained by the Machine Learning Club student initiative."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "dataCollection": {
+      "title": "Data Collection",
+      "desc": "We collect and process the following data:",
+      "items": {
+        "1": "Usage data for website improvement",
+        "2": "Waitlist subscription data",
+        "3": "Newsletter subscription data"
+      }
+    },
+    "cookies": {
+      "title": "Cookies",
+      "desc": "We use cookies to improve your browsing experience."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "desc": "You have the right to have your personal data deleted."
+    },
+    "contact": {
+      "title": "Contact for Privacy Concerns",
+      "desc": "For privacy-related questions, please contact us via email."
+    }
   }
 }

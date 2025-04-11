@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Loader2, Database, LineChart, BrainCircuit } from "lucide-react";
 import { supabase } from './lib/supabase.js';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import {useTranslation} from "react-i18next";
 
 export default function WorkInProgress() {
     const [email, setEmail] = useState("");
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");
+
+    const { t } = useTranslation();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -65,14 +69,14 @@ export default function WorkInProgress() {
                 />
 
                 <p className="pt-5 text-lg text-gray-300">
-                    Our new ML club is launching soon. Be the first to explore cutting-edge models!
+                    {t('work_in_progress.description')}
                 </p>
 
                 {/* Signup Form */}
                 <form onSubmit={handleSubmit} className="mt-6 flex flex-col items-center w-full">
                     <motion.input
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder={t('work_in_progress.enter_email')}
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
@@ -85,7 +89,7 @@ export default function WorkInProgress() {
                         disabled={loading}
                         whileHover={{ scale: 1.05 }}
                     >
-                        {loading ? <Loader2 className="animate-spin h-6 w-6 mx-auto" /> : "Notify Me"}
+                        {loading ? <Loader2 className="animate-spin h-6 w-6 mx-auto" /> : t('work_in_progress.notify_me')}
                     </motion.button>
                 </form>
 
@@ -103,8 +107,14 @@ export default function WorkInProgress() {
 
                 {/* Contact Information */}
                 <p className="text-sm text-gray-400 mt-6">
-                    Questions? <a href="mailto:contact@machine-learning.club" className="text-blue-400 hover:text-blue-300">Email us</a>
+                    {t('work_in_progress.questions')} <a href="mailto:contact@machine-learning.club" className="text-blue-400 hover:text-blue-300">{t('work_in_progress.email_us')}</a>
                 </p>
+
+                {/* Imprint and Privacy Links */}
+                <div className="text-sm text-gray-400 mt-6">
+                    <Link to="/imprint" className="text-blue-400 hover:text-blue-300 mr-4">{t('work_in_progress.imprint')}</Link>
+                    <Link to="/privacy" className="text-blue-400 hover:text-blue-300">{t('work_in_progress.privacy')}</Link>
+                </div>
             </motion.div>
         </div>
     );

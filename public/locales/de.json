@@ -100,5 +100,64 @@
     "imprint": "Impressum",
     "data_privacy": "Datenschutz",
     "contact": "Kontakt"
+  },
+  "work_in_progress": {
+    "description": "Unser neuer ML Club wird bald starten. Lass dich benachrichtigen, sobald es losgeht!",
+    "notify_me": "Benachrichtige mich",
+    "enter_email": "Gib deine E-Mail ein",
+    "questions": "Fragen?",
+    "email_us": "Schreib uns eine E-Mail",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "responsible": {
+      "title": "Verantwortlich für den Inhalt"
+    },
+    "university": {
+      "name": "c/o AStA Universität Bonn",
+      "street": "Endenicher Allee 19 (Container)",
+      "city": "53115 Bonn",
+      "country": "Deutschland"
+    },
+    "representative": {
+      "title": "Vertreten durch",
+      "name": "Lars Lewerenz, Marius von Kleist",
+      "position": "Vorstand",
+      "address": "Adresse siehe oben"
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "legal": {
+      "title": "Rechtliche Hinweise",
+      "desc": "Diese Website wird von der studentischen Initiative Machine Learning Club betrieben."
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "dataCollection": {
+      "title": "Sammlung von Daten",
+      "desc": "Wir sammeln und verarbeiten die folgenden Daten:",
+      "items": {
+        "1": "Nutzungsdaten zur Verbesserung der Website",
+        "2": "Daten zur Wartelistenanmeldung",
+        "3": "Daten zur Newsletter-Anmeldung"
+      }
+    },
+    "cookies": {
+      "title": "Cookies",
+      "desc": "Wir verwenden Cookies, um dein Surferlebnis zu verbessern."
+    },
+    "rights": {
+      "title": "Deine Rechte",
+      "desc": "Du hast das Recht, deine persönlichen Daten löschen zu lassen."
+    },
+    "contact": {
+      "title": "Kontakt für Datenschutzanliegen",
+      "desc": "Bei datenschutzrechtlichen Fragen kontaktiere uns bitte per E-Mail."
+    }
   }
+
 }
