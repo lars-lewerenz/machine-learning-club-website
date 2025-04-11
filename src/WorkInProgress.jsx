@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Loader2, Database, LineChart, BrainCircuit } from "lucide-react";
 import { supabase } from './lib/supabase.js';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function WorkInProgress() {
     const [email, setEmail] = useState("");
@@ -41,29 +42,27 @@ export default function WorkInProgress() {
             >
                 {/* Machine Learning Icons with Animation */}
                 <motion.div
-                    animate={{ rotate: [0, 10, -10, 0] }}
-                    transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                     className="flex justify-center items-center mb-4 gap-4"
                 >
-                    <Database className="h-14 w-14 text-blue-400" />
-                    <LineChart className="h-14 w-14 text-purple-400" />
+                    <Database className="h-10 w-10 text-blue-500" />
+                    <LineChart className="h-10 w-10 text-purple-500" />
+                    <BrainCircuit className="h-10 w-10 text-purple-700" />
                 </motion.div>
 
                 {/* Title - Focused on Machine Learning */}
                 <motion.h1
-                    className="pb-1 text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600 mb-6 leading-snug"
+                    className="pb-1 text-3xl md:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600 mb-6 leading-snug"
                 >
-                    Training Models. Optimizing Networks.
+                    Machine Learning Club
                 </motion.h1>
 
-                {/* Neural Network Pulsing Animation */}
-                <motion.div
-                    animate={{ scale: [1, 1.15, 1] }}
-                    transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                {/* Adjust size of Lottie animation */}
+                <DotLottieReact
+                    src="src/animations/flying_robot.lottie"
+                    loop
+                    autoplay
                     className="flex justify-center items-center"
-                >
-                    <BrainCircuit className="h-12 w-12 text-purple-500" />
-                </motion.div>
+                />
 
                 <p className="pt-5 text-lg text-gray-300">
                     Our new ML club is launching soon. Be the first to explore cutting-edge models!
