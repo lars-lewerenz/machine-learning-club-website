@@ -108,7 +108,22 @@
     "questions": "Questions?",
     "email_us": "Email us",
     "imprint": "Imprint",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "first_meeting": {
+      "title": "First Meeting Details",
+      "date.name": "Date",
+      "date.value": "30.04.2025",
+      "time.name": "Time",
+      "time.value": "16:00 - 19:00",
+      "location.name": "Location",
+      "location.value": "Kleiner Hörsaal, Wegelerstr. 10",
+      "export_to_calendar": "Export to Calendar"
+    },
+    "waiting_list": {
+      "success": "✅ You're signed up! We'll notify you when the website goes live.",
+      "failed": "⚠️ Failed to sign up. Please try again.",
+      "error": "Network error. Please try again later."
+    }
   },
   "imprint": {
     "title": "Imprint",

@@ -108,7 +108,22 @@
     "questions": "Fragen?",
     "email_us": "Schreib uns eine E-Mail",
     "imprint": "Impressum",
-    "privacy": "Datenschutz"
+    "privacy": "Datenschutz",
+    "first_meeting": {
+      "title": "Erstes Treffen",
+      "date.name": "Datum",
+      "date.value": "30.04.2025",
+      "time.name": "Uhrzeit",
+      "time.value": "16:00 - 19:00",
+      "location.name": "Ort",
+      "location.value": "Kleiner Hörsaal, Wegelerstr. 10",
+      "export_to_calendar": "Zum Kalender hinzufügen"
+    },
+    "waiting_list": {
+      "success": "✅ Du bist angemeldet! Wir benachrichtigen dich, wenn die Website online geht.",
+      "failed": "⚠️ Anmeldung fehlgeschlagen. Bitte versuche es erneut.",
+      "error": "Netzwerkfehler. Bitte versuche es später erneut."
+    }
   },
   "imprint": {
     "title": "Impressum",
