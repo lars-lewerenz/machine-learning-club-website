@@ -15,7 +15,6 @@ i18n
             en: { translation: enTranslation },
             de: { translation: deTranslation },
         },
-        lng: 'en',
         fallbackLng: 'en', // Use English if detected language is not available
         interpolation: {
             escapeValue: false, // React already escapes values
