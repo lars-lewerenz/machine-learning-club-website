@@ -1,15 +1,9 @@
 
 import React from "react"
-import { motion } from "framer-motion"
+import {Link} from "react-router-dom";
 
 export function FooterLink({ href, children }) {
   return (
-    <motion.a 
-      href={href} 
-      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-      whileHover={{ scale: 1.05 }}
-    >
-      {children}
-    </motion.a>
+      <Link to={href} className="text-blue-400 hover:text-blue-300 mr-4">{children}</Link>
   )
 }

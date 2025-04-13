@@ -463,9 +463,9 @@ export function HomePage() {
                             <span className="font-bold">Machine Learning Club</span>
                         </motion.div>
                         <div className="flex gap-6">
-                            <FooterLink href="#">{t('footer.imprint')}</FooterLink>
-                            <FooterLink href="#">{t('footer.data_privacy')}</FooterLink>
-                            <FooterLink href="#">{t('footer.contact')}</FooterLink>
+
+                            <FooterLink href="/imprint">{t('footer.imprint')}</FooterLink>
+                            <FooterLink href="/privacy">{t('footer.data_privacy')}</FooterLink>
                         </div>
                     </div>
                 </div>
