@@ -32,6 +32,7 @@ import SectionHeader from "@/components/SectionHeader.jsx";
 import WorkInProgress from "@/WorkInProgress.jsx";
 import {supabase} from "@/lib/supabase.js";
 import {showErrorToast, showSuccessToast} from "@/lib/toasts.js";
+import {useDarkMode} from "@/hooks/useDarkMode.js";
 
 const SITE_UNDER_CONSTRUCTION = true; // Set to `false` when the site is ready
 
@@ -43,7 +44,7 @@ export function HomePage() {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
     const { t, i18n } = useTranslation(); // i18n hook to access the current language
-    const [darkMode, setDarkMode] = useState(false) // State for dark mode
+    const [darkMode, toggleDarkMode] = useDarkMode();
 
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -52,58 +53,6 @@ export function HomePage() {
         window.addEventListener('mousemove', handleMouseMove)
         return () => window.removeEventListener('mousemove', handleMouseMove)
     }, [])
-
-    // Persist dark mode setting in localStorage
-    useEffect(() => {
-        // Check localStorage first for manual override
-        const savedDarkMode = localStorage.getItem('darkMode') === 'true';
-        if (savedDarkMode !== null) {
-            // If a manual setting exists, use that
-            setDarkMode(savedDarkMode);
-        } else {
-            // Otherwise, use system preference
-            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            setDarkMode(systemPrefersDark);
-        }
-
-        // Apply the dark mode class based on the current mode
-        if (savedDarkMode || (!savedDarkMode && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-
-        // Listen for changes in the user's color scheme preference
-        const colorSchemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-        const handleColorSchemeChange = (e) => {
-            if (!localStorage.getItem('darkMode')) {  // Only update if no manual override
-                const prefersDark = e.matches;
-                setDarkMode(prefersDark);
-                document.documentElement.classList.toggle('dark', prefersDark);
-            }
-        };
-
-        colorSchemeMediaQuery.addEventListener('change', handleColorSchemeChange);
-
-        // Clean up the event listener when the component is unmounted
-        return () => {
-            colorSchemeMediaQuery.removeEventListener('change', handleColorSchemeChange);
-        };
-    }, []); // This effect runs once when the component mounts
-
-    // Toggle dark mode on button click
-    const toggleDarkMode = () => {
-        const newMode = !darkMode;
-        setDarkMode(newMode);
-        localStorage.setItem('darkMode', newMode.toString()); // Save the preference
-
-        // Toggle the dark class based on the new mode
-        if (newMode) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    };
 
     const handleNewsletterSubmit = async (e) => {
         e.preventDefault();
