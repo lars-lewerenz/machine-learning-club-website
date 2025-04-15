@@ -29,6 +29,12 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
+    --warning: 34 100% 50%; /* Bright amber */
+    --warning-foreground: 0 0% 100%; /* White */
+
+    --success: 142 71% 45%; /* Vivid green */
+    --success-foreground: 0 0% 100%; /* White */
+
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 221.2 83.2% 53.3%;
@@ -60,6 +66,12 @@
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
+
+    --warning: 34 100% 60%; /* Slightly softer amber */
+    --warning-foreground: 210 40% 98%; /* Light text */
+
+    --success: 141 76% 36%; /* Muted green for dark bg */
+    --success-foreground: 210 40% 98%; /* Light text */
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;

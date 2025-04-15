@@ -88,13 +88,17 @@
     "name": "Your name",
     "email": "Your email address",
     "message": "Your message",
-    "send": "Send message"
+    "send": "Send message",
+    "sent": "Your message has been sent.",
+    "error": "Something went wrong, please try again."
   },
   "newsletter": {
     "title": "Newsletter",
     "description": "Stay updated about new events and challenges",
     "email": "Your email address",
-    "subscribe": "Subscribe"
+    "subscribe": "Subscribe",
+    "subscribed": "Subscribed successfully.",
+    "error": "Something went wrong, please try again."
   },
   "footer": {
     "imprint": "Imprint",

@@ -88,13 +88,17 @@
     "name": "Dein Name",
     "email": "Deine E-Mail-Adresse",
     "message": "Deine Nachricht",
-    "send": "Nachricht senden"
+    "send": "Nachricht senden",
+    "sent": "Nachricht gesendet.",
+    "error": "Etwas ist schiefgelaufen, versuche es erneut."
   },
   "newsletter": {
     "title": "Newsletter",
     "description": "Bleibe auf dem Laufenden über neue Events und Challenges",
     "email": "Deine E-Mail-Adresse",
-    "subscribe": "Anmelden"
+    "subscribe": "Anmelden",
+    "subscribed": "Erfolgerich angemeldet.",
+    "error": "Etwas ist schiefgelaufen, versuche es erneut."
   },
   "footer": {
     "imprint": "Impressum",

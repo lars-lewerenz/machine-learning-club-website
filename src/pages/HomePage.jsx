@@ -30,6 +30,8 @@ import { HallOfFameCard } from "@/components/HallOfFameCard"
 import LanguageSwitcher from "@/components/LanguageSwitcher.jsx";
 import SectionHeader from "@/components/SectionHeader.jsx";
 import WorkInProgress from "@/WorkInProgress.jsx";
+import {supabase} from "@/lib/supabase.js";
+import {showErrorToast, showSuccessToast} from "@/lib/toasts.js";
 
 const SITE_UNDER_CONSTRUCTION = true; // Set to `false` when the site is ready
 
@@ -103,50 +105,48 @@ export function HomePage() {
         }
     };
 
-    const handleNewsletterSubmit = (e) => {
+    const handleNewsletterSubmit = async (e) => {
         e.preventDefault();
         const email = e.target.email.value;  // Get email from form
-        console.log("Newsletter Registration Email:", email);
 
-        // Send email to a backend or third-party service
-        // Example: send the email to a backend API
-        fetch('/api/subscribe-newsletter', {
-            method: 'POST',
-            body: JSON.stringify({ email }),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }).then(response => {
-            if (response.ok) {
-                alert('Successfully subscribed to the newsletter!');
+        try {
+            const {error} = await supabase
+                .from("newsletter")
+                .insert([{email}]);
+
+            if (!error) {
+                showSuccessToast(t("newsletter.subscribed"))
+                e.target.reset()
             } else {
-                alert('Something went wrong, please try again.');
+                showErrorToast(t("newsletter.error"))
             }
-        });
+        } catch (error) {
+            showErrorToast(t("newsletter.error"))
+            console.error(error);
+        }
     };
 
-    const handleContactSubmit = (e) => {
+    const handleContactSubmit = async (e) => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
         const message = e.target.message.value;
-        console.log("Contact Form Data:", { name, email, message });
 
-        // Send data to backend or third-party service
-        // Example: send the contact message to a backend API
-        fetch('/api/contact-us', {
-            method: 'POST',
-            body: JSON.stringify({ name, email, message }),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }).then(response => {
-            if (response.ok) {
-                alert('Your message has been sent!');
+        try {
+            const {error} = await supabase
+                .from("contact")
+                .insert([{name, email, message}]);
+
+            if (!error) {
+                showSuccessToast(t("contact.sent"))
+                e.target.reset()
             } else {
-                alert('Something went wrong, please try again.');
+                showErrorToast(t("contact.error"))
             }
-        });
+        } catch (error) {
+            showErrorToast(t("contact.error"))
+            console.error(error)
+        }
     };
 
     const backgroundX = useTransform(scrollYProgress, [0, 1], [0, 100])
@@ -409,12 +409,12 @@ export function HomePage() {
                                     />
                                 </div>
                                 <div>
-                  <textarea
-                      name="message"
-                      placeholder={t("contact.message")}
-                      className="w-full p-2 rounded bg-card border h-32"
-                      required
-                  ></textarea>
+                                  <textarea
+                                      name="message"
+                                      placeholder={t("contact.message")}
+                                      className="w-full p-2 rounded bg-card border h-32"
+                                      required
+                                  ></textarea>
                                 </div>
                                 <Button className="flex items-center gap-2" type="submit">
                                     <Send className="w-4 h-4" />
