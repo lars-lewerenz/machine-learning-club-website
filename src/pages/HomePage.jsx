@@ -48,11 +48,13 @@ export function HomePage() {
 
     useEffect(() => {
         const handleMouseMove = (e) => {
-            setMousePosition({ x: e.clientX, y: e.clientY })
-        }
-        window.addEventListener('mousemove', handleMouseMove)
-        return () => window.removeEventListener('mousemove', handleMouseMove)
-    }, [])
+            window.requestAnimationFrame(() => {
+                setMousePosition({ x: e.clientX, y: e.clientY });
+            });
+        };
+        window.addEventListener('mousemove', handleMouseMove);
+        return () => window.removeEventListener('mousemove', handleMouseMove);
+    }, []);
 
     const handleNewsletterSubmit = async (e) => {
         e.preventDefault();
