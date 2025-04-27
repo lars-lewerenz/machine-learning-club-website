@@ -61,20 +61,85 @@
   },
   "materials": {
     "title": "Lehrmaterialien",
+    "free_books": "Kostenlose Bücher",
+    "free_courses": "Kostenlose Online-Kurse",
+    "practice_platforms": "Übungsplattformen",
+    "cheat_sheets": "Spickzettel & Referenzen",
+    "to_material": "Ansehen",
     "material_1": {
-      "title": "Grundlagen der KI",
-      "description": "Einführung in die wichtigsten Konzepte der künstlichen Intelligenz.",
-      "link": "link-zu-KI"
+      "title": "An Introduction to Statistical Learning",
+      "description": "Grundlagen des maschinellen Lernens für Einsteiger, mit praktischen Beispielen.",
+      "link": "https://www.statlearning.com/"
     },
     "material_2": {
-      "title": "Python Basics",
-      "description": "Programmiergrundlagen für Machine Learning mit Python.",
-      "link": "link-zu-python"
+      "title": "Machine Learning Yearning",
+      "description": "Andrew Ng's Leitfaden zur effektiven Strukturierung von ML-Projekten.",
+      "link": "https://info.deeplearning.ai/machine-learning-yearning-book"
     },
     "material_3": {
-      "title": "Data Science",
-      "description": "Datenanalyse und -visualisierung für ML-Projekte.",
-      "link": "link-zu-datascience"
+      "title": "Understanding Machine Learning: From Theory to Algorithms",
+      "description": "Mathematische Grundlagen und tiefere Einblicke in wichtige ML-Algorithmen.",
+      "link": "https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/"
+    },
+    "material_4": {
+      "title": "Google's Machine Learning Crash Course",
+      "description": "Praktische Einführung in maschinelles Lernen mit interaktiven Übungen.",
+      "link": "https://developers.google.com/machine-learning/crash-course"
+    },
+    "material_5": {
+      "title": "Harvard's Data Science: Machine Learning (edX)",
+      "description": "Lerne wichtige ML-Algorithmen und Konzepte mit Professoren von Harvard.",
+      "link": "https://pll.harvard.edu/course/data-science-machine-learning"
+    },
+    "material_6": {
+      "title": "Microsoft's Machine Learning for Beginners",
+      "description": "12-wöchiger Kurs für Einsteiger zum Aufbau solider ML-Grundlagen.",
+      "link": "https://microsoft.github.io/ML-For-Beginners/"
+    },
+    "material_7": {
+      "title": "Kaggle's Intro to Machine Learning",
+      "description": "Praktische Grundlagen: Modellvalidierung, Overfitting und Pipelines.",
+      "link": "https://www.kaggle.com/learn/intro-to-machine-learning"
+    },
+    "material_8": {
+      "title": "Fast.ai's Practical Deep Learning for Coders",
+      "description": "Lerne Deep Learning durch echte Anwendungen mit FastAI und PyTorch.",
+      "link": "https://course.fast.ai/"
+    },
+    "material_9": {
+      "title": "Kaggle",
+      "description": "Tritt ML-Wettbewerben bei, übe an Datensätzen und entwickle deine Fähigkeiten.",
+      "link": "https://www.kaggle.com/"
+    },
+    "material_10": {
+      "title": "Google Colab",
+      "description": "Führe ML-Experimente kostenlos in der Cloud aus — keine Installation nötig.",
+      "link": "https://colab.research.google.com/"
+    },
+    "material_11": {
+      "title": "Stanford CS229 Machine Learning Spickzettel",
+      "description": "Zusammenfassungen wichtiger ML-Konzepte: Überwachtes/Unüberwachtes Lernen, Deep Learning uvm.",
+      "link": "https://github.com/afshinea/stanford-cs-229-machine-learning"
+    },
+    "material_12": {
+      "title": "DataCamp's Machine Learning Spickzettel",
+      "description": "Schneller Überblick über Modelle, Vorteile und Anwendungsfälle im ML.",
+      "link": "https://www.datacamp.com/cheat-sheet/machine-learning-cheat-sheet"
+    },
+    "material_13": {
+      "title": "GeeksforGeeks Machine Learning Algorithmen Spickzettel",
+      "description": "Handliche Übersicht über überwachtes, unüberwachtes und bestärkendes Lernen.",
+      "link": "https://www.geeksforgeeks.org/machine-learning-algorithms-cheat-sheet/"
+    },
+    "material_14": {
+      "title": "AI-ML Spickzettel GitHub-Repository",
+      "description": "Sammlung von Spickzetteln zu maschinellem Lernen und KI zur schnellen Nachschlage.",
+      "link": "https://github.com/SamBelkacem/AI-ML-cheatsheets"
+    },
+    "material_15": {
+      "title": "Machine Learning Glossar",
+      "description": "Klare Erklärungen von ML-Begriffen, Konzepten und Workflows mit Diagrammen.",
+      "link": "https://ml-cheatsheet.readthedocs.io/"
     }
   },
   "about": {
@@ -178,5 +243,4 @@
       "desc": "Bei datenschutzrechtlichen Fragen kontaktiere uns bitte per E-Mail."
     }
   }
-
 }

@@ -24,7 +24,6 @@ import { NavLink } from "@/components/NavLink"
 import { FooterLink } from "@/components/FooterLink"
 import { FeatureCard } from "@/components/FeatureCard"
 import { EventCard } from "@/components/EventCard"
-import { MaterialCard } from "@/components/MaterialCard"
 import { ChallengeCard } from "@/components/ChallengeCard"
 import { HallOfFameCard } from "@/components/HallOfFameCard"
 import LanguageSwitcher from "@/components/LanguageSwitcher.jsx";
@@ -33,6 +32,7 @@ import WorkInProgress from "@/WorkInProgress.jsx";
 import {supabase} from "@/lib/supabase.js";
 import {showErrorToast, showSuccessToast} from "@/lib/toasts.js";
 import {useDarkMode} from "@/hooks/useDarkMode.js";
+import MaterialsSection from "@/components/MaterialsSection.jsx";
 
 const SITE_UNDER_CONSTRUCTION = true; // Set to `false` when the site is ready
 
@@ -43,7 +43,7 @@ export function HomePage() {
     const { scrollYProgress } = useScroll()
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
-    const { t, i18n } = useTranslation(); // i18n hook to access the current language
+    const { t } = useTranslation(); // i18n hook to access the current language
     const [darkMode, toggleDarkMode] = useDarkMode();
 
     useEffect(() => {
@@ -146,7 +146,7 @@ export function HomePage() {
             </nav>
 
 
-            {/* Hero Section */}
+            {/* Title Section */}
             <section className="pt-32 pb-16 px-4 relative overflow-hidden">
                 <div className="container mx-auto relative">
                     <motion.div
@@ -191,7 +191,7 @@ export function HomePage() {
             </section>
 
             {/* Current Challenge Section */}
-            <section id="challenge" className="py-16 bg-muted/50">
+            <section id="challenge" className="py-16 even:bg-muted/50">
                 <div className="container mx-auto px-4">
                     <SectionHeader icon={Trophy} title={t('current_challenge.title')}/>
                     <ChallengeCard
@@ -203,7 +203,6 @@ export function HomePage() {
                     />
                 </div>
             </section>
-
 
             {/* Events Section */}
             <section id="events" className="py-16">
@@ -221,7 +220,7 @@ export function HomePage() {
             </section>
 
             {/* Hall of Fame Section */}
-            <section id="hall-of-fame" className="py-16">
+            <section id="hall-of-fame" className="py-16 bg-muted/50">
                 <div className="container mx-auto px-4">
                     <SectionHeader icon={Trophy} title={t('hall_of_fame.title')}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -235,8 +234,8 @@ export function HomePage() {
                 </div>
             </section>
 
-            {/* Features Section */}
-            <section className="py-16 bg-muted/50">
+            {/* Focus Section */}
+            <section className="py-16">
                 <div className="container mx-auto px-4">
                     <SectionHeader icon={Cpu} title={t('features.title')}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -264,31 +263,7 @@ export function HomePage() {
                 </div>
             </section>
 
-
-            {/* Materials Section */}
-            <section id="materials" className="py-16 bg-muted/50">
-                <div className="container mx-auto px-4">
-                    <SectionHeader icon={BookOpen} title={t('materials.title')} />
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <MaterialCard
-                            title={t('materials.material_1.title')}
-                            description={t('materials.material_1.description')}
-                            link={t('materials.material_1.link')}
-                        />
-                        <MaterialCard
-                            title={t('materials.material_2.title')}
-                            description={t('materials.material_2.description')}
-                            link={t('materials.material_2.link')}
-                        />
-                        <MaterialCard
-                            title={t('materials.material_3.title')}
-                            description={t('materials.material_3.description')}
-                            link={t('materials.material_3.link')}
-                        />
-                    </div>
-                </div>
-            </section>
-
+            <MaterialsSection/>
 
             {/* About Section */}
             <section id="about" className="py-16">
@@ -307,10 +282,10 @@ export function HomePage() {
                             <p className="text-muted-foreground mb-6">
                                 {t('about.description_2')}
                             </p>
-                            <Button variant="outline">
+                            {/*<Button variant="outline">
                                 {t('about.button_text')}
                                 <Users className="ml-2 h-4 w-4"/>
-                            </Button>
+                            </Button>*/}
                         </motion.div>
                         <motion.div
                             initial={{opacity: 0, x: 50}}
@@ -320,7 +295,7 @@ export function HomePage() {
                             className="relative aspect-video rounded-lg overflow-hidden group"
                         >
                             <img alt="Studierende bei einer ML-Club Veranstaltung"
-                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                 className="object-cover transition-transform duration-500 group-hover:scale-110"
                                  src="https://images.unsplash.com/photo-1638029202288-451a89e0d55f"/>
                         </motion.div>
                     </div>
