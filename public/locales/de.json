@@ -24,20 +24,20 @@
   },
   "events": {
     "title": "Kommende Termine",
-    "introduction_to_neural_networks": {
-      "name": "Einführung in Neural Networks",
-      "date": "15. April 2025",
-      "time": "14:00 - 16:00",
-      "location": "Raum 2.01"
+    "first_meeting": {
+      "name": "Erstes Treffen",
+      "date": "30. April 2025",
+      "time": "16:00 - 19:00",
+      "location": "Kleiner Hörsaal, Wegelerstr. 10"
     }
   },
   "hall_of_fame": {
     "title": "Hall of Fame",
-    "2025_march": {
-      "date": "März 2025",
-      "challenge_title": "Neural Network Architecture Challenge",
-      "winner": "Team Neural Ninjas",
-      "description": "Herausragende Leistung in der Entwicklung einer innovativen CNN-Architektur mit 98.5% Genauigkeit."
+    "2025_may": {
+      "date": "Mai 2025",
+      "challenge_title": "Schlaganfälle vorhersagen",
+      "winner": "???",
+      "description": "???"
     }
   },
   "features": {

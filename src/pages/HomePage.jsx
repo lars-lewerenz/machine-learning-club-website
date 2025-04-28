@@ -127,10 +127,10 @@ export function HomePage() {
                     </motion.div>
                     <div className="hidden md:flex items-center gap-6">
                         <NavLink href="#challenge">{t('navigation.challenge')}</NavLink>
-                        <NavLink href="#hall-of-fame">{t('navigation.hall_of_fame')}</NavLink>
-                        <NavLink href="#about">{t('navigation.about')}</NavLink>
                         <NavLink href="#events">{t('navigation.events')}</NavLink>
+                        <NavLink href="#hall-of-fame">{t('navigation.hall_of_fame')}</NavLink>
                         <NavLink href="#materials">{t('navigation.materials')}</NavLink>
+                        <NavLink href="#about">{t('navigation.about')}</NavLink>
                     </div>
                     <div className="flex items-center gap-4"> {/* Align both language switcher and dark mode toggle */}
                         <LanguageSwitcher/>
@@ -210,10 +210,10 @@ export function HomePage() {
                     <SectionHeader icon={CalendarIcon} title={t('events.title')}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <EventCard
-                            title={t('events.introduction_to_neural_networks.name')}
-                            date={t('events.introduction_to_neural_networks.date')}
-                            time={t('events.introduction_to_neural_networks.time')}
-                            location={t('events.introduction_to_neural_networks.location')}
+                            title={t('events.first_meeting.name')}
+                            date={t('events.first_meeting.date')}
+                            time={t('events.first_meeting.time')}
+                            location={t('events.first_meeting.location')}
                         />
                     </div>
                 </div>
@@ -225,10 +225,10 @@ export function HomePage() {
                     <SectionHeader icon={Trophy} title={t('hall_of_fame.title')}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <HallOfFameCard
-                            title={t('hall_of_fame.2025_march.challenge_title')}
-                            date={t('hall_of_fame.2025_march.date')}
-                            winner={t('hall_of_fame.2025_march.winner')}
-                            description={t('hall_of_fame.2025_march.description')}
+                            title={t('hall_of_fame.2025_may.challenge_title')}
+                            date={t('hall_of_fame.2025_may.date')}
+                            winner={t('hall_of_fame.2025_may.winner')}
+                            description={t('hall_of_fame.2025_may.description')}
                         />
                     </div>
                 </div>

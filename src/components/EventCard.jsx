@@ -13,7 +13,7 @@ export function EventCard({ title, date, time, location }) {
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
       "BEGIN:VEVENT",
-      `SUMMARY:${title}`,
+      `SUMMARY:Machine Learning Club: ${title}`,
       `DTSTART:${formatDate(startDate)}`,
       `DTEND:${formatDate(endDate)}`,
       `LOCATION:${location}`,
