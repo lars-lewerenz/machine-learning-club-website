@@ -12,14 +12,16 @@
     "sparkles": "Funkeln"
   },
   "current_challenge": {
-    "title": "Aktuelle Challenge"
+    "title": "Aktuelle Challenge",
+    "deadline": "Abgabe bis",
+    "presentation": "Präsentation"
   },
   "challenges": {
     "stroke_prediction": {
       "name": "Schlaganfälle vorhersagen",
       "description": "Entwickle ein Machine-Learning-Modell, das basierend auf Patientendaten vorhersagt, ob eine Person ein Schlaganfallrisiko hat. Der Datensatz enthält demografische Merkmale, Gesundheitsfaktoren und Lebensstilinformationen. Ziel ist es, präzise Vorhersagen zu treffen und effektive Modelle für das Ungleichgewicht der Daten zu finden.",
-      "deadline": "30. April 2025",
-      "presentation": "5. Mai 2025, 14:00 Uhr"
+      "deadline": "31. Mai 2025, Mitternacht",
+      "presentation": "???"
     }
   },
   "events": {

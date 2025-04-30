@@ -34,7 +34,7 @@ import {showErrorToast, showSuccessToast} from "@/lib/toasts.js";
 import {useDarkMode} from "@/hooks/useDarkMode.js";
 import MaterialsSection from "@/components/MaterialsSection.jsx";
 
-const SITE_UNDER_CONSTRUCTION = true; // Set to `false` when the site is ready
+const SITE_UNDER_CONSTRUCTION = false; // Set to `false` when the site is ready
 
 export function HomePage() {
     if (SITE_UNDER_CONSTRUCTION) {
@@ -199,7 +199,7 @@ export function HomePage() {
                         description={t('challenges.stroke_prediction.description')}
                         deadline={t('challenges.stroke_prediction.deadline')}
                         presentationDate={t('challenges.stroke_prediction.presentation')}
-                        link="https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset"
+                        link="https://www.kaggle.com/t/debf7387451c41ec8fd3bbb8343c5adf"
                     />
                 </div>
             </section>

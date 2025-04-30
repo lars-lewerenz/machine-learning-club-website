@@ -3,8 +3,10 @@ import React from "react"
 import { motion } from "framer-motion"
 import { Trophy, Calendar, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import {useTranslation} from "react-i18next";
 
 export function ChallengeCard({ title, description, deadline, presentationDate, link }) {
+  const { t } = useTranslation();
   return (
     <motion.div 
       whileHover={{ y: -5 }}
@@ -20,11 +22,11 @@ export function ChallengeCard({ title, description, deadline, presentationDate, 
           <div className="space-y-2 mb-6">
             <p className="text-sm flex items-center text-muted-foreground">
               <Calendar className="inline h-4 w-4 mr-2"/>
-              Abgabe bis: {deadline}
+              {t('current_challenge.deadline')}: {deadline}
             </p>
             <p className="text-sm flex items-center text-muted-foreground">
               <Calendar className="inline h-4 w-4 mr-2"/>
-              Präsentation: {presentationDate}
+              {t('current_challenge.presentation')}: {presentationDate}
             </p>
           </div>
           <a href={link} target="_blank" rel="noopener noreferrer">

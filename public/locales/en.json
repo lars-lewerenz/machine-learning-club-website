@@ -12,14 +12,16 @@
     "sparkles": "Sparkles"
   },
   "current_challenge": {
-    "title": "Current Challenge"
+    "title": "Current Challenge",
+    "deadline": "Submission deadline",
+    "presentation": "Presentation"
   },
   "challenges": {
     "stroke_prediction": {
       "name": "Predict Strokes",
       "description": "Develop a machine learning model that predicts whether a person is at risk of having a stroke based on patient data. The dataset includes demographic characteristics, health factors, and lifestyle information. The goal is to make accurate predictions and develop effective models for data imbalance.",
-      "deadline": "April 30, 2025",
-      "presentation": "May 5, 2025, 14:00"
+      "deadline": "May 31, 2025, midnight",
+      "presentation": "???"
     }
   },
   "events": {
