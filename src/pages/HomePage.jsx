@@ -33,6 +33,7 @@ import {supabase} from "@/lib/supabase.js";
 import {showErrorToast, showSuccessToast} from "@/lib/toasts.js";
 import {useDarkMode} from "@/hooks/useDarkMode.js";
 import MaterialsSection from "@/components/MaterialsSection.jsx";
+import { PreviousEventCard } from "@/components/PreviousEventCard.jsx";
 
 const SITE_UNDER_CONSTRUCTION = false; // Set to `false` when the site is ready
 
@@ -210,17 +211,33 @@ export function HomePage() {
                     <SectionHeader icon={CalendarIcon} title={t('events.title')}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <EventCard
+                            title={t('events.second_meeting.name')}
+                            date={t('events.second_meeting.date')}
+                            time={t('events.second_meeting.time')}
+                            location={t('events.second_meeting.location')}
+                        />
+                    </div>
+                </div>
+            </section>
+
+            {/* Previous events section */}
+            <section id="previous-events" className="py-16 bg-muted/50">
+                <div className="container mx-auto px-4">
+                    <SectionHeader icon={CalendarIcon} title={t("previous_events.title")}/>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <PreviousEventCard
                             title={t('events.first_meeting.name')}
                             date={t('events.first_meeting.date')}
                             time={t('events.first_meeting.time')}
                             location={t('events.first_meeting.location')}
+                            materialLink="/materials/MLC_Erstes_Treffen.pdf"
                         />
                     </div>
                 </div>
             </section>
 
             {/* Hall of Fame Section */}
-            <section id="hall-of-fame" className="py-16 bg-muted/50">
+            <section id="hall-of-fame" className="py-16">
                 <div className="container mx-auto px-4">
                     <SectionHeader icon={Trophy} title={t('hall_of_fame.title')}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -235,7 +252,7 @@ export function HomePage() {
             </section>
 
             {/* Focus Section */}
-            <section className="py-16">
+            <section className="py-16 bg-muted/50">
                 <div className="container mx-auto px-4">
                     <SectionHeader icon={Cpu} title={t('features.title')}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -266,7 +283,7 @@ export function HomePage() {
             <MaterialsSection/>
 
             {/* About Section */}
-            <section id="about" className="py-16">
+            <section id="about" className="py-16 bg-muted/50">
                 <div className="container mx-auto px-4">
                     <SectionHeader icon={Users} title={t('about.title')} className="mb-12"/>
                     <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -303,7 +320,7 @@ export function HomePage() {
             </section>
 
             {/* Contact & Newsletter Section */}
-            <section className="bg-muted/50 py-16">
+            <section className="py-16">
                 <div className="container mx-auto px-4">
                     <div className="grid md:grid-cols-2 gap-8">
                         <div>

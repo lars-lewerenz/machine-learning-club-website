@@ -33,7 +33,7 @@ const sections = [
 export default function MaterialsSection() {
     const { t } = useTranslation();
     return (
-        <section id="materials" className="py-16 bg-muted/50">
+        <section id="materials" className="py-16">
             <div className="container mx-auto px-4 space-y-12">
                 <SectionHeader icon={BookOpen} title={t("materials.title")} />
                 {sections.map((section) => (

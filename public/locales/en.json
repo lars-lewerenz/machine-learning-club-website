@@ -31,7 +31,17 @@
       "date": "April 30, 2025",
       "time": "16:00 - 19:00",
       "location": "Kleiner Hörsaal, Wegelerstr. 10"
+    },
+    "second_meeting": {
+      "name": "Second Meeting",
+      "date": "???",
+      "time": "?",
+      "location": "?"
     }
+  },
+  "previous_events": {
+    "title": "Previous Events",
+    "material": "Download material"
   },
   "hall_of_fame": {
     "title": "Hall of Fame",
