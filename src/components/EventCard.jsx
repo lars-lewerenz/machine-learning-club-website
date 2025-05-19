@@ -3,6 +3,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { Calendar, Clock, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import {useTranslation} from "react-i18next";
 
 export function EventCard({ title, date, time, location }) {
   const createICSFile = () => {
@@ -33,6 +34,7 @@ export function EventCard({ title, date, time, location }) {
   const formatDate = (date) => {
     return date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z"
   }
+  const { t } = useTranslation();
 
   return (
     <motion.div 
@@ -56,7 +58,7 @@ export function EventCard({ title, date, time, location }) {
             className="w-full flex items-center justify-center gap-2"
           >
             <Download className="h-4 w-4" />
-            Zum Kalender hinzufügen
+            {t('events.add_to_calendar')}
           </Button>
         </div>
       </div>

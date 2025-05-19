@@ -14,29 +14,31 @@
   "current_challenge": {
     "title": "Current Challenge",
     "deadline": "Submission deadline",
-    "presentation": "Presentation"
+    "presentation": "Presentation",
+    "view_challenge": "View challenge"
   },
   "challenges": {
     "stroke_prediction": {
       "name": "Predict Strokes",
       "description": "Develop a machine learning model that predicts whether a person is at risk of having a stroke based on patient data. The dataset includes demographic characteristics, health factors, and lifestyle information. The goal is to make accurate predictions and develop effective models for data imbalance.",
       "deadline": "May 31, 2025, midnight",
-      "presentation": "???"
+      "presentation": "June 04, 2025"
     }
   },
   "events": {
     "title": "Upcoming Events",
+    "add_to_calendar": "Add to calendar",
     "first_meeting": {
       "name": "First Meeting",
       "date": "April 30, 2025",
-      "time": "16:00 - 19:00",
+      "time": "16:00 - 18:00",
       "location": "Kleiner Hörsaal, Wegelerstr. 10"
     },
     "second_meeting": {
       "name": "Second Meeting",
-      "date": "???",
-      "time": "?",
-      "location": "?"
+      "date": "June 04, 2025",
+      "time": "16:00 - 18:00",
+      "location": "Kleiner Hörsaal, Wegelerstr. 10"
     }
   },
   "previous_events": {

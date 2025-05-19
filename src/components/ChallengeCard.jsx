@@ -22,7 +22,7 @@ export function ChallengeCard({ title, description, deadline, presentationDate, 
           <div className="space-y-2 mb-6">
             <p className="text-sm flex items-center text-muted-foreground">
               <Calendar className="inline h-4 w-4 mr-2"/>
-              {t('current_challenge.deadline')}: {deadline}
+              <strong>{t('current_challenge.deadline')}</strong>: {deadline}
             </p>
             <p className="text-sm flex items-center text-muted-foreground">
               <Calendar className="inline h-4 w-4 mr-2"/>
@@ -31,7 +31,7 @@ export function ChallengeCard({ title, description, deadline, presentationDate, 
           </div>
           <a href={link} target="_blank" rel="noopener noreferrer">
             <Button className="w-full">
-              Zur Challenge
+              {t('current_challenge.view_challenge')}
               <ChevronRight className="ml-2 h-4 w-4"/>
             </Button>
           </a>

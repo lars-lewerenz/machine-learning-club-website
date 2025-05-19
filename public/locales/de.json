@@ -14,29 +14,31 @@
   "current_challenge": {
     "title": "Aktuelle Challenge",
     "deadline": "Abgabe bis",
-    "presentation": "Präsentation"
+    "presentation": "Präsentation",
+    "view_challenge": "Zur Challenge"
   },
   "challenges": {
     "stroke_prediction": {
       "name": "Schlaganfälle vorhersagen",
       "description": "Entwickle ein Machine-Learning-Modell, das basierend auf Patientendaten vorhersagt, ob eine Person ein Schlaganfallrisiko hat. Der Datensatz enthält demografische Merkmale, Gesundheitsfaktoren und Lebensstilinformationen. Ziel ist es, präzise Vorhersagen zu treffen und effektive Modelle für das Ungleichgewicht der Daten zu finden.",
       "deadline": "31. Mai 2025, Mitternacht",
-      "presentation": "???"
+      "presentation": "04. Juni 2025"
     }
   },
   "events": {
     "title": "Kommende Termine",
+    "add_to_calendar": "Zum Kalender hinzufügen",
     "first_meeting": {
       "name": "Erstes Treffen",
       "date": "30. April 2025",
-      "time": "16:00 - 19:00",
+      "time": "16:00 - 18:00",
       "location": "Kleiner Hörsaal, Wegelerstr. 10"
     },
     "second_meeting": {
       "name": "Zweites Treffen",
-      "date": "???",
-      "time": "?",
-      "location": "???"
+      "date": "04. Juni 2025",
+      "time": "16:00 - 18:00",
+      "location": "Kleiner Hörsaal, Wegelerstr. 10"
     }
   },
   "previous_events": {
