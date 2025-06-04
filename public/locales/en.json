@@ -22,7 +22,15 @@
       "name": "Predict Strokes",
       "description": "Develop a machine learning model that predicts whether a person is at risk of having a stroke based on patient data. The dataset includes demographic characteristics, health factors, and lifestyle information. The goal is to make accurate predictions and develop effective models for data imbalance.",
       "deadline": "May 31, 2025, midnight",
-      "presentation": "June 04, 2025"
+      "presentation": "June 04, 2025",
+      "link": "https://www.kaggle.com/t/debf7387451c41ec8fd3bbb8343c5adf"
+    },
+    "bike_sharing_demand_prediction": {
+      "name": "Predict Rental Bike Demand",
+      "description": "Develop a machine learning model that predicts how many bikes will be needed at a specific location and time based on data from a bike-sharing system. The dataset includes information on rental and return times, weather conditions, holidays, and time of day. The goal is to make accurate demand forecasts and to develop models that reliably capture seasonal and temporal fluctuations.",
+      "deadline": "July 06, 2025, midnight",
+      "presentation": "???",
+      "link": "https://www.kaggle.com/t/3c7d6ca1cc8a4a9eab222f5482f7ce67"
     }
   },
   "events": {
@@ -50,8 +58,8 @@
     "2025_may": {
       "date": "May 2025",
       "challenge_title": "Predict Strokes",
-      "winner": "???",
-      "description": "???"
+      "winner": "Kollegah1",
+      "description": "Klassifikations Casanova"
     }
   },
   "features": {

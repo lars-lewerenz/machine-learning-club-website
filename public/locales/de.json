@@ -22,7 +22,15 @@
       "name": "Schlaganfälle vorhersagen",
       "description": "Entwickle ein Machine-Learning-Modell, das basierend auf Patientendaten vorhersagt, ob eine Person ein Schlaganfallrisiko hat. Der Datensatz enthält demografische Merkmale, Gesundheitsfaktoren und Lebensstilinformationen. Ziel ist es, präzise Vorhersagen zu treffen und effektive Modelle für das Ungleichgewicht der Daten zu finden.",
       "deadline": "31. Mai 2025, Mitternacht",
-      "presentation": "04. Juni 2025"
+      "presentation": "04. Juni 2025",
+      "link": "https://www.kaggle.com/t/debf7387451c41ec8fd3bbb8343c5adf"
+    },
+    "bike_sharing_demand_prediction": {
+      "name": "Leihfahrrad Nachfrage vorhersagen",
+      "description": "Entwickle ein Machine-Learning-Modell, das auf Basis von Nutzungsdaten eines Fahrradverleihsystems vorhersagt, wie viele Fahrräder an einem bestimmten Standort zu einem bestimmten Zeitpunkt benötigt werden. Der Datensatz enthält Informationen zu Ausleih- und Rückgabezeitpunkten, Wetterbedingungen, Feiertagen und Tageszeiten. Ziel ist es, präzise Vorhersagen zur Nachfrage zu treffen und Modelle zu entwickeln, die auch saisonale und zeitliche Schwankungen zuverlässig abbilden.",
+      "deadline": "06. July 2025, Mitternacht",
+      "presentation": "???",
+      "link": "https://www.kaggle.com/t/3c7d6ca1cc8a4a9eab222f5482f7ce67"
     }
   },
   "events": {
@@ -50,8 +58,8 @@
     "2025_may": {
       "date": "Mai 2025",
       "challenge_title": "Schlaganfälle vorhersagen",
-      "winner": "???",
-      "description": "???"
+      "winner": "Kollegah1",
+      "description": "Klassifikations Casanova"
     }
   },
   "features": {

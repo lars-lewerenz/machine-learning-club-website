@@ -196,11 +196,11 @@ export function HomePage() {
                 <div className="container mx-auto px-4">
                     <SectionHeader icon={Trophy} title={t('current_challenge.title')}/>
                     <ChallengeCard
-                        title={t('challenges.stroke_prediction.name')}
-                        description={t('challenges.stroke_prediction.description')}
-                        deadline={t('challenges.stroke_prediction.deadline')}
-                        presentationDate={t('challenges.stroke_prediction.presentation')}
-                        link="https://www.kaggle.com/t/debf7387451c41ec8fd3bbb8343c5adf"
+                        title={t('challenges.bike_sharing_demand_prediction.name')}
+                        description={t('challenges.bike_sharing_demand_prediction.description')}
+                        deadline={t('challenges.bike_sharing_demand_prediction.deadline')}
+                        presentationDate={t('challenges.bike_sharing_demand_prediction.presentation')}
+                        link={t('challenges.bike_sharing_demand_prediction.link')}
                     />
                 </div>
             </section>
