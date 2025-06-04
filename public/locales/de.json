@@ -68,6 +68,12 @@
       "challenge_title": "Schlaganfälle vorhersagen",
       "winner": "Kollegah1",
       "description": "Klassifikations Casanova"
+    },
+    "2025_june": {
+      "date": "Juni 2025",
+      "challenge_title": "Leihfahrrad Nachfrage vorhersagen",
+      "winner": "???",
+      "description": "Regressions Ritter"
     }
   },
   "features": {

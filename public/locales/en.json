@@ -68,6 +68,12 @@
       "challenge_title": "Predict Strokes",
       "winner": "Kollegah1",
       "description": "Klassifikations Casanova"
+    },
+    "2025_june": {
+      "date": "June 2025",
+      "challenge_title": "Predict Rental Bike Demand",
+      "winner": "???",
+      "description": "Regressions Ritter"
     }
   },
   "features": {

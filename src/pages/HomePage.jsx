@@ -252,6 +252,12 @@ export function HomePage() {
                     <SectionHeader icon={Trophy} title={t('hall_of_fame.title')}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <HallOfFameCard
+                            title={t('hall_of_fame.2025_june.challenge_title')}
+                            date={t('hall_of_fame.2025_june.date')}
+                            winner={t('hall_of_fame.2025_june.winner')}
+                            description={t('hall_of_fame.2025_june.description')}
+                        />
+                        <HallOfFameCard
                             title={t('hall_of_fame.2025_may.challenge_title')}
                             date={t('hall_of_fame.2025_may.date')}
                             winner={t('hall_of_fame.2025_may.winner')}
