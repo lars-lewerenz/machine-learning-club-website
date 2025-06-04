@@ -37,21 +37,29 @@
     "title": "Kommende Termine",
     "add_to_calendar": "Zum Kalender hinzufügen",
     "first_meeting": {
-      "name": "Erstes Treffen",
+      "name": "Erstes Treffen: Schlaganfälle vorhersagen",
       "date": "30. April 2025",
       "time": "16:00 - 18:00",
       "location": "Kleiner Hörsaal, Wegelerstr. 10"
     },
     "second_meeting": {
-      "name": "Zweites Treffen",
+      "name": "Zweites Treffen: Leihfahrrad Nachfrage vorhersagen",
       "date": "04. Juni 2025",
+      "time": "16:00 - 18:00",
+      "location": "Kleiner Hörsaal, Wegelerstr. 10"
+    },
+    "third_meeting": {
+      "name": "Drittes Treffen",
+      "date": "???",
       "time": "16:00 - 18:00",
       "location": "Kleiner Hörsaal, Wegelerstr. 10"
     }
   },
   "previous_events": {
     "title": "Vergangene Termine",
-    "material": "Materialien herunterladen"
+    "material": "Folien ansehen",
+    "small_model_on_github": "Kleines Modell auf GitHub ansehen",
+    "kaggle_challenge": "Kaggle Challenge ansehen"
   },
   "hall_of_fame": {
     "title": "Hall of Fame",

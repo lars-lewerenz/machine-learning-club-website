@@ -211,10 +211,10 @@ export function HomePage() {
                     <SectionHeader icon={CalendarIcon} title={t('events.title')}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <EventCard
-                            title={t('events.second_meeting.name')}
-                            date={t('events.second_meeting.date')}
-                            time={t('events.second_meeting.time')}
-                            location={t('events.second_meeting.location')}
+                            title={t('events.third_meeting.name')}
+                            date={t('events.third_meeting.date')}
+                            time={t('events.third_meeting.time')}
+                            location={t('events.third_meeting.location')}
                         />
                     </div>
                 </div>
@@ -226,11 +226,21 @@ export function HomePage() {
                     <SectionHeader icon={CalendarIcon} title={t("previous_events.title")}/>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <PreviousEventCard
+                            title={t('events.second_meeting.name')}
+                            date={t('events.second_meeting.date')}
+                            time={t('events.second_meeting.time')}
+                            location={t('events.second_meeting.location')}
+                            materialLink="/materials/MLC_Zweites_Treffen.pdf"
+                            kaggleLink="https://www.kaggle.com/t/3c7d6ca1cc8a4a9eab222f5482f7ce67"
+                        />
+                        <PreviousEventCard
                             title={t('events.first_meeting.name')}
                             date={t('events.first_meeting.date')}
                             time={t('events.first_meeting.time')}
                             location={t('events.first_meeting.location')}
                             materialLink="/materials/MLC_Erstes_Treffen.pdf"
+                            kaggleLink="https://www.kaggle.com/t/debf7387451c41ec8fd3bbb8343c5adf"
+                            githubLink="https://github.com/lars-lewerenz/mlc-challenges/blob/master/predict_strokes/simple_model.ipynb"
                         />
                     </div>
                 </div>

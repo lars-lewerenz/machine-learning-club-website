@@ -37,21 +37,29 @@
     "title": "Upcoming Events",
     "add_to_calendar": "Add to calendar",
     "first_meeting": {
-      "name": "First Meeting",
+      "name": "First Meeting: Predict Strokes",
       "date": "April 30, 2025",
       "time": "16:00 - 18:00",
       "location": "Kleiner Hörsaal, Wegelerstr. 10"
     },
     "second_meeting": {
-      "name": "Second Meeting",
+      "name": "Second Meeting: Predict Rental Bike Demand",
       "date": "June 04, 2025",
+      "time": "16:00 - 18:00",
+      "location": "Kleiner Hörsaal, Wegelerstr. 10"
+    },
+    "third_meeting": {
+      "name": "Third Meeting",
+      "date": "???",
       "time": "16:00 - 18:00",
       "location": "Kleiner Hörsaal, Wegelerstr. 10"
     }
   },
   "previous_events": {
     "title": "Previous Events",
-    "material": "Download material"
+    "material": "View material",
+    "small_model_on_github": "View small model on GitHub",
+    "kaggle_challenge": "View Kaggle challenge"
   },
   "hall_of_fame": {
     "title": "Hall of Fame",
