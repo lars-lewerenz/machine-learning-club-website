@@ -74,7 +74,8 @@
       "challenge_title": "Leihfahrrad Nachfrage vorhersagen",
       "winner": "???",
       "description": "Regressions Ritter"
-    }
+    },
+    "winner": "Gewinner"
   },
   "features": {
     "title": "Unsere Schwerpunkte",

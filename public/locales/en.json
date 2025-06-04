@@ -74,7 +74,8 @@
       "challenge_title": "Predict Rental Bike Demand",
       "winner": "???",
       "description": "Regressions Ritter"
-    }
+    },
+    "winner": "Winner"
   },
   "features": {
     "title": "Our Focus Areas",
